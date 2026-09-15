@@ -1,0 +1,24 @@
+56ff4a106000-56ff4a107000 r--p 00000000 08:30 51832                      /home/susmitha/Terminal-Temptation_OSSP/Practical/2520030201/Practical-07/memory_addresses
+56ff4a107000-56ff4a108000 r-xp 00001000 08:30 51832                      /home/susmitha/Terminal-Temptation_OSSP/Practical/2520030201/Practical-07/memory_addresses
+56ff4a108000-56ff4a109000 r--p 00002000 08:30 51832                      /home/susmitha/Terminal-Temptation_OSSP/Practical/2520030201/Practical-07/memory_addresses
+56ff4a109000-56ff4a10a000 r--p 00002000 08:30 51832                      /home/susmitha/Terminal-Temptation_OSSP/Practical/2520030201/Practical-07/memory_addresses
+56ff4a10a000-56ff4a10b000 rw-p 00003000 08:30 51832                      /home/susmitha/Terminal-Temptation_OSSP/Practical/2520030201/Practical-07/memory_addresses
+56ff7fe45000-56ff7fe66000 rw-p 00000000 00:00 0                          [heap]
+752db5000000-752db5028000 r--p 00000000 08:30 14176                      /usr/lib/x86_64-linux-gnu/libc.so.6
+752db5028000-752db51c0000 r-xp 00028000 08:30 14176                      /usr/lib/x86_64-linux-gnu/libc.so.6
+752db51c0000-752db520e000 r--p 001c0000 08:30 14176                      /usr/lib/x86_64-linux-gnu/libc.so.6
+752db520e000-752db5212000 r--p 0020d000 08:30 14176                      /usr/lib/x86_64-linux-gnu/libc.so.6
+752db5212000-752db5214000 rw-p 00211000 08:30 14176                      /usr/lib/x86_64-linux-gnu/libc.so.6
+752db5214000-752db5221000 rw-p 00000000 00:00 0 
+752db5235000-752db5238000 rw-p 00000000 00:00 0 
+752db523e000-752db5240000 rw-p 00000000 00:00 0 
+752db5240000-752db5244000 r--p 00000000 00:00 0                          [vvar]
+752db5244000-752db5246000 r--p 00000000 00:00 0                          [vvar_vclock]
+752db5246000-752db5248000 r-xp 00000000 00:00 0                          [vdso]
+752db5248000-752db5249000 r--p 00000000 08:30 13931                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+752db5249000-752db5278000 r-xp 00001000 08:30 13931                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+752db5278000-752db5283000 r--p 00030000 08:30 13931                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+752db5283000-752db5285000 r--p 0003b000 08:30 13931                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+752db5285000-752db5286000 rw-p 0003d000 08:30 13931                      /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+752db5286000-752db5287000 rw-p 00000000 00:00 0 
+7fffbfd37000-7fffbfd58000 rw-p 00000000 00:00 0                          [stack]
