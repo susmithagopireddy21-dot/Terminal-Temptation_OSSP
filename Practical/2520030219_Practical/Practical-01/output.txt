@@ -1,0 +1,5 @@
+Enter Linux command: ls
+Parent PID: 1208
+Child PID: 1209
+Program  Program.c  hardware.md  input.txt  output.txt
+Child process completed
