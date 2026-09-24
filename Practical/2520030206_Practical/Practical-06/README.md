@@ -2,11 +2,11 @@
 
 ## Part A - FIFO Client-Server Communication
 
-### 1. Server - Basic Communication
-![Server Communication](Screenshot1.png)
+### 1. Client - Server Response
+![Client Response](Screenshot1.png)
 
-### 2. Client - Server Response
-![Client Response](Screenshot2.png)
+### 2. Server - Basic Communication
+![Server Communication](Screenshot2.png)
 
 ### 3. Multiple Client Communication
 ![Multiple Clients](Screenshot3.png)
