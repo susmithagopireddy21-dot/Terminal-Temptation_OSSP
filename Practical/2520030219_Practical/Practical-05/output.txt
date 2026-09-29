@@ -1,0 +1,18 @@
+===== Part 1: Producer-Consumer using Anonymous Pipe =====
+
+Parent process (Producer)
+Sent data: Hello from parent process!
+Communication time: 0.000002351 seconds
+Child process (Consumer)
+Received data: Hello from parent process!
+
+Consumer process completed
+Producer-Consumer communication completed
+
+===== Part 2: ls -l | grep ".c" =====
+
+-rwxr-xr-x 1 sreeja sreeja 16520 Sep 29 03:49 Practical5
+-rw-r--r-- 1 sreeja sreeja  2747 Sep 14 19:13 Practical5.c
+-rw-r--r-- 1 sreeja sreeja  6739 Sep 14 19:18 Practical5.md
+
+Pipeline execution completed
