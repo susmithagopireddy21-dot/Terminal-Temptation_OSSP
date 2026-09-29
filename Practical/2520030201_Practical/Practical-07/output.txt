@@ -1,0 +1,9 @@
+=== memory_addresses.c ===
+Process ID     : 2478
+Code address   : 0x64ce78d7a209
+Global address : 0x64ce78d7d010
+Static address : 0x64ce78d7d014
+Heap address   : 0x64ceac803010
+Stack address  : 0x7fffc29ee27c
+
+Press Enter to exit...
