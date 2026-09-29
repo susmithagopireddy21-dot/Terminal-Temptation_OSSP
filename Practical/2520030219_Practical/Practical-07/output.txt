@@ -1,0 +1,10 @@
+===== Process Memory Addresses =====
+Code address   : 0x5ba41d2a7209
+Global address : 0x5ba41d2aa010
+Static address : 0x5ba41d2aa014
+Heap address   : 0x5ba4228f6010
+Stack address  : 0x7ffe754180fc
+
+Process PID: 3256
+
+Press Enter to exit...
