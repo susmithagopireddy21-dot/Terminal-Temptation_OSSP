@@ -1,0 +1,28 @@
+=== memory_allocation.c ===
+Memory allocated using malloc():
+10 20 30
+Memory allocated using calloc():
+0 0 0
+Memory after realloc():
+10 20 30 40 50
+Memory freed successfully.
+
+=== Valgrind Memory Check ===
+HEAP SUMMARY:
+    in use at exit: 0 bytes in 0 blocks
+    total heap usage: 4 allocs, 4 frees, 1,068 bytes allocated
+
+All heap blocks were freed -- no leaks are possible
+ERROR SUMMARY: 0 errors from 0 contexts
+=== copy_on_write.c ===
+Parent process PID: 4020
+Memory allocated for array: 4000000 bytes
+
+Child process PID: 4021
+Before modification: data[0] = 0
+After modification: data[0] = 999
+Child modified the memory, causing Copy-on-Write.
+
+Parent process after child exits:
+Parent data[0] = 0
+Parent retains its original value.
