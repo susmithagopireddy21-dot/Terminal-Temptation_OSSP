@@ -1,0 +1,4 @@
+Input file: sample.txt
+
+Content:
+Hello! This is Practical-02 file copy testing.
