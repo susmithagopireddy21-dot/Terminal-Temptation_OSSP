@@ -1,0 +1,22 @@
+Producer-Consumer using POSIX Threads and Counting Semaphores
+=============================================================
+Buffer size: 5
+Items processed: 100000
+Execution time: 0.907713 seconds
+Throughput: 110166.98 items/second
+-----------------------------------
+Buffer size: 10
+Items processed: 100000
+Execution time: 0.401760 seconds
+Throughput: 248904.82 items/second
+-----------------------------------
+Buffer size: 20
+Items processed: 100000
+Execution time: 0.162678 seconds
+Throughput: 614711.27 items/second
+-----------------------------------
+Buffer size: 50
+Items processed: 100000
+Execution time: 0.068884 seconds
+Throughput: 1451715.93 items/second
+-----------------------------------

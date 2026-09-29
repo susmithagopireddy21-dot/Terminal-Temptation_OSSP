@@ -1,0 +1,15 @@
+Deadlock prevention using resource ordering
+============================================
+Thread 1: locking Resource 1...
+Thread 1: Resource 1 locked.
+Thread 2: locking Resource 1...
+Thread 1: locking Resource 2...
+Thread 1: Resource 2 locked.
+Thread 1: using both resources.
+Thread 1: resources released.
+Thread 2: Resource 1 locked.
+Thread 2: locking Resource 2...
+Thread 2: Resource 2 locked.
+Thread 2: using both resources.
+Thread 2: resources released.
+Program completed without deadlock.
