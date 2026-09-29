@@ -1,0 +1,7 @@
+Low-level system calls:
+open(), read(), write(), lseek(), close()
+Time taken: 0.000350 seconds
+
+Standard library functions:
+fopen(), fread(), fwrite(), fclose()
+Time taken: 0.000449 seconds

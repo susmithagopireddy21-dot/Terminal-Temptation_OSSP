@@ -1,0 +1,2 @@
+Data received through redirected stdin:
+Hello from redirected input using dup2().
