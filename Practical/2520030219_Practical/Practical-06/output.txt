@@ -1,0 +1,28 @@
+===== Part 1: Named Pipe (FIFO) Communication =====
+
+Server Output
+-------------
+Server started. Waiting for clients...
+Client message: Hello Server
+Response sent to client
+
+
+Client Output
+-------------
+Enter message: Hello Server
+Server response: Message processed by server
+
+
+===== Part 2: Signal Handling =====
+
+Signal Output
+-------------
+Signal handling program started
+PID: 2780
+Waiting for signals...
+
+SIGUSR1 received
+
+SIGTERM received
+
+SIGINT received
