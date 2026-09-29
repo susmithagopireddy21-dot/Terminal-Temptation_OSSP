@@ -1,0 +1,24 @@
+===== cow.c Output =====
+
+Parent PID: 3673
+Before fork: data[0] = 10
+
+Child PID: 3674
+Before modification: data[0] = 10
+Child paused before modification...
+After modification: data[0] = 99
+Child has its own copy of the modified page
+Child paused after modification...
+
+Parent after child modification: data[0] = 10
+Parent data is unchanged
+
+
+===== memory.c Output =====
+
+===== Dynamic Memory Allocation =====
+
+malloc(): 1 2 3 4 5
+calloc(): 0 0 0 0 0
+realloc(): 1 2 3 4 5 6 7 8 9 10
+free(): Memory released
