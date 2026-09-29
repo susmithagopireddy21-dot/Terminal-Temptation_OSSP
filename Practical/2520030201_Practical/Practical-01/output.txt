@@ -1,0 +1,5 @@
+Enter a Linux command: ls
+Parent Process PID: 1077
+Child Process PID: 1078
+command_execution  command_execution.c  os_hardware_report.md
+Child process completed
