@@ -1,0 +1,351 @@
+6583  execve("./skill01_process", ["./skill01_process"], 0x7ffdb1142188 /* 26 vars */) = 0
+6583  brk(NULL)                         = 0x6190be551000
+6583  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x777c5f202000
+6583  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+6583  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+6583  fstat(3, {st_mode=S_IFREG|0644, st_size=21423, ...}) = 0
+6583  mmap(NULL, 21423, PROT_READ, MAP_PRIVATE, 3, 0) = 0x777c5f1fc000
+6583  close(3)                          = 0
+6583  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+6583  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+6583  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6583  fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+6583  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6583  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x777c5ee00000
+6583  mmap(0x777c5ee28000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x777c5ee28000
+6583  mmap(0x777c5efc0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x777c5efc0000
+6583  mmap(0x777c5f00e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x777c5f00e000
+6583  mmap(0x777c5f014000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x777c5f014000
+6583  close(3)                          = 0
+6583  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x777c5f1f9000
+6583  arch_prctl(ARCH_SET_FS, 0x777c5f1f9740) = 0
+6583  set_tid_address(0x777c5f1f9d68)   = 6583
+6583  set_robust_list(0x777c5f1f9a20, 24) = 0
+6583  rseq(0x777c5f1f96a0, 0x20, 0, 0x53053053) = 0
+6583  mprotect(0x777c5f00e000, 16384, PROT_READ) = 0
+6583  mprotect(0x61908e09b000, 4096, PROT_READ) = 0
+6583  mprotect(0x777c5f247000, 8192, PROT_READ) = 0
+6583  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+6583  getrandom("\x72\xd6\xf1\x51\x0c\x7f\x28\x21", 8, GRND_NONBLOCK) = 8
+6583  munmap(0x777c5f1fc000, 21423)     = 0
+6583  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+6583  brk(NULL)                         = 0x6190be551000
+6583  brk(0x6190be572000)               = 0x6190be572000
+6583  write(1, "Skill-01: Process Abstraction De"..., 35) = 35
+6583  getpid()                          = 6583
+6583  write(1, "Parent Process ID: 6583\n", 24) = 24
+6583  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+6583  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x777c5f1f9a10) = 6584
+6584  set_robust_list(0x777c5f1f9a20, 24 <unfinished ...>
+6583  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+6584  <... set_robust_list resumed>)    = 0
+6583  <... rt_sigprocmask resumed>, NULL, 8) = 0
+6583  write(1, "\n", 1 <unfinished ...>
+6584  rt_sigprocmask(SIG_SETMASK, [] <unfinished ...>
+6583  <... write resumed>)              = 1
+6584  <... rt_sigprocmask resumed>, NULL, 8) = 0
+6583  write(1, "Parent Process\n", 15)  = 15
+6584  write(1, "\n", 1 <unfinished ...>
+6583  getpid( <unfinished ...>
+6584  <... write resumed>)              = 1
+6583  <... getpid resumed>)             = 6583
+6584  write(1, "Child Process\n", 14 <unfinished ...>
+6583  write(1, "Parent PID: 6583\n", 17 <unfinished ...>
+6584  <... write resumed>)              = 14
+6583  <... write resumed>)              = 17
+6584  getpid( <unfinished ...>
+6583  write(1, "Created Child PID: 6584\n", 24 <unfinished ...>
+6584  <... getpid resumed>)             = 6584
+6583  <... write resumed>)              = 24
+6584  write(1, "Child PID: 6584\n", 16 <unfinished ...>
+6583  wait4(6584 <unfinished ...>
+6584  <... write resumed>)              = 16
+6584  getppid()                         = 6583
+6584  write(1, "Parent PID: 6583\n", 17) = 17
+6584  write(1, "Child is executing 'ls' using ex"..., 42) = 42
+6584  execve("/usr/local/sbin/ls", ["ls", "-l"], 0x7ffe3782d648 /* 26 vars */) = -1 ENOENT (No such file or directory)
+6584  execve("/usr/local/bin/ls", ["ls", "-l"], 0x7ffe3782d648 /* 26 vars */) = -1 ENOENT (No such file or directory)
+6584  execve("/usr/sbin/ls", ["ls", "-l"], 0x7ffe3782d648 /* 26 vars */) = -1 ENOENT (No such file or directory)
+6584  execve("/usr/bin/ls", ["ls", "-l"], 0x7ffe3782d648 /* 26 vars */) = 0
+6584  brk(NULL)                         = 0x5f46870f3000
+6584  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7510f9b4b000
+6584  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+6584  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+6584  fstat(3, {st_mode=S_IFREG|0644, st_size=21423, ...}) = 0
+6584  mmap(NULL, 21423, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7510f9b45000
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+6584  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6584  fstat(3, {st_mode=S_IFREG|0644, st_size=199120, ...}) = 0
+6584  mmap(NULL, 206288, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7510f9b12000
+6584  mmap(0x7510f9b19000, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7510f9b19000
+6584  mmap(0x7510f9b3a000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7510f9b3a000
+6584  mmap(0x7510f9b41000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2f000) = 0x7510f9b41000
+6584  mmap(0x7510f9b43000, 5584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7510f9b43000
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+6584  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6584  fstat(3, {st_mode=S_IFREG|0644, st_size=187120, ...}) = 0
+6584  mmap(NULL, 185256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7510f9ae4000
+6584  mmap(0x7510f9ae8000, 147456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7510f9ae8000
+6584  mmap(0x7510f9b0c000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7510f9b0c000
+6584  mmap(0x7510f9b10000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2c000) = 0x7510f9b10000
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+6584  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6584  fstat(3, {st_mode=S_IFREG|0644, st_size=1198376, ...}) = 0
+6584  mmap(NULL, 1200152, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7510f99be000
+6584  mmap(0x7510f99d0000, 655360, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7510f99d0000
+6584  mmap(0x7510f9a70000, 466944, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb2000) = 0x7510f9a70000
+6584  mmap(0x7510f9ae2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x123000) = 0x7510f9ae2000
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+6584  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \250\2\0\0\0\0\0"..., 832) = 832
+6584  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6584  fstat(3, {st_mode=S_IFREG|0755, st_size=2190608, ...}) = 0
+6584  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 840, 64) = 840
+6584  mmap(NULL, 2231696, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7510f9600000
+6584  mmap(0x7510f9628000, 1671168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7510f9628000
+6584  mmap(0x7510f97c0000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7510f97c0000
+6584  mmap(0x7510f980e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20e000) = 0x7510f980e000
+6584  mmap(0x7510f9814000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7510f9814000
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+6584  read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+6584  fstat(3, {st_mode=S_IFREG|0644, st_size=699056, ...}) = 0
+6584  mmap(NULL, 701112, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7510f9912000
+6584  mmap(0x7510f9915000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7510f9915000
+6584  mmap(0x7510f9991000, 176128, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0x7510f9991000
+6584  mmap(0x7510f99bc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa9000) = 0x7510f99bc000
+6584  close(3)                          = 0
+6584  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7510f9910000
+6584  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7510f990d000
+6584  arch_prctl(ARCH_SET_FS, 0x7510f990db00) = 0
+6584  set_tid_address(0x7510f990e128)   = 6584
+6584  set_robust_list(0x7510f990dde0, 24) = 0
+6584  rseq(0x7510f990d6a0, 0x20, 0, 0x53053053) = 0
+6584  mprotect(0x7510f980e000, 16384, PROT_READ) = 0
+6584  mprotect(0x7510f99bc000, 4096, PROT_READ) = 0
+6584  mprotect(0x7510f9ae2000, 4096, PROT_READ) = 0
+6584  mprotect(0x7510f9b10000, 4096, PROT_READ) = 0
+6584  mprotect(0x7510f9b41000, 4096, PROT_READ) = 0
+6584  mprotect(0x5f4666cdb000, 1462272, PROT_READ) = 0
+6584  mprotect(0x7510f9b90000, 8192, PROT_READ) = 0
+6584  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+6584  getrandom("\xbc\xef\x38\x5b\xc7\x42\xae\xc3", 8, GRND_NONBLOCK) = 8
+6584  munmap(0x7510f9b45000, 21423)     = 0
+6584  statfs("/sys/fs/selinux", {f_type=SYSFS_MAGIC, f_bsize=4096, f_blocks=0, f_bfree=0, f_bavail=0, f_files=0, f_ffree=0, f_fsid={val=[0x7f273016, 0xa5266b23]}, f_namelen=255, f_frsize=4096, f_flags=ST_VALID|ST_NOSUID|ST_NODEV|ST_NOEXEC|ST_NOATIME}) = 0
+6584  statfs("/selinux", 0x7ffd7b713310) = -1 ENOENT (No such file or directory)
+6584  brk(NULL)                         = 0x5f46870f3000
+6584  brk(0x5f4687114000)               = 0x5f4687114000
+6584  openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+6584  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+6584  read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 442
+6584  lseek(3, 0, SEEK_CUR)             = 442
+6584  lseek(3, 416, SEEK_SET)           = 416
+6584  close(3)                          = 0
+6584  openat(AT_FDCWD, "/proc/mounts", O_RDONLY|O_CLOEXEC) = 3
+6584  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+6584  read(3, "none /usr/lib/modules/6.18.33.2-"..., 1024) = 1024
+6584  read(3, "e 0 0\ndevpts /dev/pts devpts rw,"..., 1024) = 1024
+6584  read(3, ",access=client,msize=65536,trans"..., 1024) = 1024
+6584  read(3, "700,noswap 0 0\ntmpfs /run/user/1"..., 1024) = 250
+6584  read(3, "", 1024)                 = 0
+6584  close(3)                          = 0
+6584  access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+6584  fcntl(0, F_GETFD)                 = 0
+6584  fcntl(1, F_GETFD)                 = 0
+6584  fcntl(2, F_GETFD)                 = 0
+6584  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+6584  poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+6584  rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7510f9645cb0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+6584  openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+6584  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+6584  fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+6584  read(3, "5f4666372000-5f4666464000 r--p 0"..., 1024) = 1024
+6584  read(3, "30 13647                      /u"..., 1024) = 1024
+6584  read(3, ":30 13650                      /"..., 1024) = 1024
+6584  read(3, "        /usr/lib/x86_64-linux-gn"..., 1024) = 1024
+6584  read(3, "44                      /usr/lib"..., 1024) = 561
+6584  close(3)                          = 0
+6584  sched_getaffinity(6584, 32, [0 1 2 3 4 5 6 7 8 9 10 11]) = 8
+6584  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+6584  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+6584  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7510f9b48000
+6584  mprotect(0x7510f9b48000, 4096, PROT_NONE) = 0
+6584  sigaltstack({ss_sp=0x7510f9b49000, ss_flags=0, ss_size=8192}, NULL) = 0
+6584  gettid()                          = 6584
+6584  rt_sigaction(SIGSEGV, {sa_handler=0x5f46666970c0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7510f9645cb0}, NULL, 8) = 0
+6584  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+6584  rt_sigaction(SIGBUS, {sa_handler=0x5f46666970c0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7510f9645cb0}, NULL, 8) = 0
+6584  prctl(PR_GET_AUXV, 0x7ffd7b712e00, 0x200, 0, 0) = 448
+6584  statx(AT_FDCWD, "/usr/share/coreutils/locales/ls", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+6584  statx(AT_FDCWD, "/usr/share/coreutils/locales/uucore", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+6584  openat(AT_FDCWD, "/usr/share/coreutils/locales/uucore/en-US.ftl", O_RDONLY|O_CLOEXEC) = 3
+6584  statx(3, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=4080, ...}) = 0
+6584  read(3, "# Common strings shared across a"..., 4080) = 4080
+6584  read(3, "", 32)                   = 0
+6584  close(3)                          = 0
+6584  statx(AT_FDCWD, "/usr/share/coreutils/locales/ls", AT_STATX_SYNC_AS_STAT, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+6584  openat(AT_FDCWD, "/usr/share/coreutils/locales/ls/en-US.ftl", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+6584  brk(0x5f4687135000)               = 0x5f4687135000
+6584  rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7510f9645cb0}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7510f9645cb0}, 8) = 0
+6584  rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7510f9645cb0}, {sa_handler=0x5f46666970c0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7510f9645cb0}, 8) = 0
+6584  rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7510f9645cb0}, {sa_handler=0x5f46666970c0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7510f9645cb0}, 8) = 0
+6584  ioctl(1, TCGETS2, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+6584  brk(0x5f4687156000)               = 0x5f4687156000
+6584  ioctl(1, TIOCGWINSZ, {ws_row=35, ws_col=135, ws_xpixel=0, ws_ypixel=0}) = 0
+6584  ioctl(1, TIOCGWINSZ, {ws_row=35, ws_col=135, ws_xpixel=0, ws_ypixel=0}) = 0
+6584  ioctl(1, TCGETS2, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+6584  ioctl(1, TCGETS2, {c_iflag=ICRNL|IXON, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+6584  statx(AT_FDCWD, ".", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFDIR|0755, stx_size=4096, ...}) = 0
+6584  openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+6584  fstat(3, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  newfstatat(AT_FDCWD, ".", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_SYMLINK_NOFOLLOW) = 0
+6584  getdents64(3, 0x5f4687127170 /* 6 entries */, 32768) = 200
+6584  getdents64(3, 0x5f4687127170 /* 0 entries */, 32768) = 0
+6584  statx(3, "Makefile", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=205, ...}) = 0
+6584  statx(3, "skill01_process", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0755, stx_size=16352, ...}) = 0
+6584  statx(3, "skill01_process.c", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=974, ...}) = 0
+6584  statx(3, "skill01_strace.txt", AT_STATX_SYNC_AS_STAT|AT_SYMLINK_NOFOLLOW, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=17303, ...}) = 0
+6584  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+6584  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6584  close(4)                          = 0
+6584  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+6584  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6584  close(4)                          = 0
+6584  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+6584  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+6584  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+6584  fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+6584  read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 526
+6584  read(4, "", 4096)                 = 0
+6584  fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+6584  fstat(4, {st_mode=S_IFREG|0644, st_size=1384, ...}) = 0
+6584  lseek(4, 0, SEEK_SET)             = 0
+6584  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1384
+6584  close(4)                          = 0
+6584  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+6584  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6584  close(4)                          = 0
+6584  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+6584  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+6584  close(4)                          = 0
+6584  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=526, ...}, 0) = 0
+6584  openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 4
+6584  fstat(4, {st_mode=S_IFREG|0644, st_size=784, ...}) = 0
+6584  lseek(4, 0, SEEK_SET)             = 0
+6584  read(4, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 784
+6584  close(4)                          = 0
+6584  listxattr("Makefile", "", 4096)   = 0
+6584  listxattr("skill01_process", "", 4096) = 0
+6584  listxattr("skill01_process.c", "", 4096) = 0
+6584  listxattr("skill01_strace.txt", "", 4096) = 0
+6584  listxattr("./Makefile", "", 4096) = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 25 entries */, 32768) = 760
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Etc", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 37 entries */, 32768) = 1128
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Australia", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 16 entries */, 32768) = 496
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/America", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 138 entries */, 32768) = 4440
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/America/Kentucky", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 4 entries */, 32768) = 112
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/America/Argentina", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 14 entries */, 32768) = 432
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/America/North_Dakota", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 5 entries */, 32768) = 144
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/America/Indiana", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 10 entries */, 32768) = 296
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Antarctica", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 13 entries */, 32768) = 408
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Indian", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 13 entries */, 32768) = 392
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Arctic", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 3 entries */, 32768) = 80
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Atlantic", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 13 entries */, 32768) = 408
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Europe", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 63 entries */, 32768) = 1968
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Pacific", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 43 entries */, 32768) = 1312
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Asia", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 89 entries */, 32768) = 2792
+6584  brk(0x5f4687177000)               = 0x5f4687177000
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Africa", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+6584  fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+6584  getdents64(4, 0x5f4687137690 /* 55 entries */, 32768) = 1736
+6584  getdents64(4, 0x5f4687137690 /* 0 entries */, 32768) = 0
+6584  close(4)                          = 0
+6584  readlink("/etc/localtime", "/usr/share/zoneinfo/Etc/UTC", 256) = 27
+6584  openat(AT_FDCWD, "/usr/share/zoneinfo/Etc/UTC", O_RDONLY|O_CLOEXEC) = 4
+6584  statx(4, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=114, ...}) = 0
+6584  lseek(4, 0, SEEK_CUR)             = 0
+6584  read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 114) = 114
+6584  read(4, "", 32)                   = 0
+6584  statx(4, "", AT_STATX_SYNC_AS_STAT|AT_EMPTY_PATH, STATX_ALL, {stx_mask=STATX_ALL|STATX_MNT_ID, stx_attributes=0, stx_mode=S_IFREG|0644, stx_size=114, ...}) = 0
+6584  close(4)                          = 0
+6584  listxattr("./skill01_process", "", 4096) = 0
+6584  listxattr("./skill01_process.c", "", 4096) = 0
+6584  listxattr("./skill01_strace.txt", "", 4096) = 0
+6584  close(3)                          = 0
+6584  write(1, "total 44\n-rw-r--r-- 1 susmitha s"..., 271) = 271
+6584  sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+6584  munmap(0x7510f9b48000, 12288)     = 0
+6584  exit_group(0)                     = ?
+6584  +++ exited with 0 +++
+6583  <... wait4 resumed>, NULL, 0, NULL) = 6584
+6583  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6584, si_uid=1000, si_status=0, si_utime=0, si_stime=5 /* 0.05 s */} ---
+6583  write(1, "\n", 1)                 = 1
+6583  write(1, "Child process completed.\n", 25) = 25
+6583  write(1, "Parent process completed.\n", 26) = 26
+6583  exit_group(0)                     = ?
+6583  +++ exited with 0 +++

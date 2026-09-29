@@ -1,0 +1,16 @@
+total 56
+-rw-r--r-- 1 susmitha susmitha   205 Sep 29 07:12 Makefile
+-rw-r--r-- 1 susmitha susmitha  1109 Sep 29 07:14 Skill-01_Report.md
+-rw-r--r-- 1 susmitha susmitha     0 Sep 29 07:19 skill01_output.txt
+-rwxr-xr-x 1 susmitha susmitha 16352 Sep 29 07:19 skill01_process
+-rw-r--r-- 1 susmitha susmitha   974 Sep 29 07:11 skill01_process.c
+-rw-r--r-- 1 susmitha susmitha 26785 Sep 29 07:13 skill01_strace.txt
+Skill-01: Process Abstraction Demo
+Parent Process ID: 6749
+
+Parent Process
+Parent PID: 6749
+Created Child PID: 6750
+
+Child process completed.
+Parent process completed.
