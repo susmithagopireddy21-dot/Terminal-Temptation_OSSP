@@ -1,0 +1,13 @@
+cat > output.txt << 'EOF'
+Parent process started
+Parent PID: 814
+Parent PPID: 486
+
+Parent process
+Parent PID: 814
+Child PID: 815
+
+Child process
+Child PID: 815
+Child PPID: 814
+EOF
