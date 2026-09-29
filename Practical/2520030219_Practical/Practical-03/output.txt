@@ -1,0 +1,15 @@
+Parent process started
+Parent PID: 1588
+
+Parent process
+Parent PID: 1588
+Child PID: 1589
+Parent is Running
+
+Child process
+Child PID: 1589
+Child PPID: 1588
+Child is Running
+Parent is Waiting for child
+Child is Terminating
+Child has Terminated
