@@ -1,0 +1,58 @@
+=== Part 1: Inode Investigation ===
+
+ls -li inode_test.txt hard_link.txt symbolic_link.txt
+
+53446 -rw-r--r-- 2 susmitha susmitha 38 inode_test.txt
+53446 -rw-r--r-- 2 susmitha susmitha 38 hard_link.txt
+53451 lrwxrwxrwx 1 susmitha susmitha 14 symbolic_link.txt -> inode_test.txt
+
+Observation:
+inode_test.txt and hard_link.txt have the same inode number 53446.
+The link count is 2 because two directory entries point to the same inode.
+symbolic_link.txt has a different inode number 53451 because a symbolic link
+is a separate filesystem object that stores the target path.
+
+find command also identified both hard-linked files with inode 53446.
+
+=== Part 2: mmap() File I/O ===
+
+Data written using mmap():
+Hello from memory-mapped file I/O using mmap().
+
+Data read using mmap():
+Hello from memory-mapped file I/O using mmap().
+
+Memory-mapped I/O completed successfully.
+
+mmap() maps a file into memory and allows access using memory operations.
+It can be convenient for repeated or random access.
+
+=== Traditional read()/write() File I/O ===
+
+Data written using write():
+Hello from traditional file I/O using read() and write().
+
+Data read using read():
+Hello from traditional file I/O using read() and write().
+
+Traditional read()/write() I/O completed successfully.
+
+read()/write() uses explicit system calls to transfer data.
+It is straightforward for sequential file I/O.
+
+=== Comparison ===
+
+mmap():
+- Maps the file into the process address space.
+- Allows file access through memory operations.
+- Can be convenient for repeated or random access.
+- Requires mmap(), msync(), and munmap() management.
+
+read()/write():
+- Explicitly transfers data using system calls.
+- Straightforward for sequential file operations.
+- Requires buffers and explicit read/write calls.
+
+Efficiency depends on workload, file size, access pattern, operating system,
+and caching. mmap() can reduce explicit copying and simplify repeated access,
+while read()/write() can be simpler for straightforward sequential I/O.
