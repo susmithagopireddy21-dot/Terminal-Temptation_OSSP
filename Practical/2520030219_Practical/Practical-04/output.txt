@@ -1,0 +1,37 @@
+Practical4.c Output
+-------------------
+
+Parent process started
+Parent PID: 1999
+
+
+Parent waiting using wait()
+Child 1 started
+Child 1 PID: 2000
+
+Child 2 started
+Child 2 PID: 2001
+Child 1 completed
+wait() collected a child process
+Child exit status: 10
+
+Parent waiting for Child 2 using waitpid()
+Child 2 completed
+waitpid() collected Child 2
+Child 2 exit status: 20
+
+All child processes completed
+
+
+zombie.c Output
+----------------
+
+Parent process
+Parent PID: 2035
+Child PID: 2036
+Parent is waiting for child
+Child process
+Child PID: 2036
+Child is terminating
+Child process collected
+Parent is terminating
