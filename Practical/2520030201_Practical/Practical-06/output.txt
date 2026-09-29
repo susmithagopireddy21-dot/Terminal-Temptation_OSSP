@@ -1,0 +1,6 @@
+=== signal_handling.c ===
+Signal handling program started.
+Process PID: 2090
+Waiting for signals...
+SIGINT received: Interrupt signal handled.
+SIGTERM received: Termination signal handled.
