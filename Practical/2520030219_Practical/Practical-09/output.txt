@@ -1,0 +1,27 @@
+===== File Copy Performance Comparison =====
+
+===== Low-Level File Copy =====
+File size: 246 bytes
+Methods used: open(), read(), write(), lseek(), close()
+Copy completed successfully
+Time taken: 0.000016 seconds
+
+===== Standard Library File Copy =====
+Methods used: fopen(), fread(), fwrite(), fclose()
+Copy completed successfully
+Time taken: 0.000008 seconds
+
+===== Comparison Completed =====
+
+
+===== Part 2: I/O Redirection using dup2() =====
+
+===== I/O Redirection using dup2() =====
+Standard output restored to the terminal.
+Input read using redirected standard input: Hello from redirected standard input.
+
+===== Contents of redirect_output.txt =====
+===== I/O Redirection using dup2() =====
+Standard output is currently displayed on the terminal.
+This output is redirected to redirect_output.txt
+dup2() made the file descriptor become standard output.

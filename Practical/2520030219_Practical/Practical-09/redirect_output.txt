@@ -1,0 +1,4 @@
+===== I/O Redirection using dup2() =====
+Standard output is currently displayed on the terminal.
+This output is redirected to redirect_output.txt
+dup2() made the file descriptor become standard output.

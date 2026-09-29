@@ -1,0 +1,4 @@
+This is a sample file for Practical-09.
+It is used to test low-level Linux file I/O system calls.
+The program copies this file using open(), read(), write(), lseek(), and close().
+It also compares the performance with standard library functions.
