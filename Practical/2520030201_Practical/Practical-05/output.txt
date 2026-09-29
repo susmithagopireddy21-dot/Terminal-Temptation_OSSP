@@ -1,0 +1,12 @@
+
+
+
+
+ === pipe_ls_grep.c ===
+-rw-r--r-- 1 susmitha susmitha   904 Sep 28 14:42 pipe_ls_grep.c
+-rwxr-xr-x 1 susmitha susmitha 16312 Sep 29 04:41 pipe_producer_consumer
+-rw-r--r-- 1 susmitha susmitha   722 Sep 28 14:42 pipe_producer_consumer.c
+
+=== pipe_producer_consumer.c ===
+Producer sent: Hello from Producer!
+Consumer received: Hello from Producer!
