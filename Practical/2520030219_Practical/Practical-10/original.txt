@@ -1,0 +1,1 @@
+This is Practical 10 inode and mmap experiment.
