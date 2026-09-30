@@ -1,0 +1,17 @@
+Skill-03: Command History and Dynamic Memory
+Type commands and press Enter.
+Use Up/Down arrows for command history.
+Use Backspace to edit.
+Type exit to quit.
+
+Skill-03> hello
+You entered: hello
+Skill-03> world
+You entered: world
+Skill-03> hello
+You entered: hello
+Skill-03> [KSkill-03> hello[KSkill-03> world[KSkill-03> hello
+You entered: hello
+Skill-03> exit
+You entered: exit
+Exiting Skill-03 shell...

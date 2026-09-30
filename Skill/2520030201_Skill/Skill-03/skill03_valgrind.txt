@@ -1,0 +1,31 @@
+==1922== Memcheck, a memory error detector
+==1922== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==1922== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==1922== Command: ./skill03_shell
+==1922== 
+Skill-03: Command History and Dynamic Memory
+Type commands and press Enter.
+Use Up/Down arrows for command history.
+Use Backspace to edit.
+Type exit to quit.
+
+Skill-03> first
+You entered: first
+Skill-03> second
+You entered: second
+Skill-03> third
+You entered: third
+Skill-03> [KSkill-03> third[KSkill-03> second[KSkill-03> first
+You entered: first
+Skill-03> exit
+You entered: exit
+Exiting Skill-03 shell...
+==1922== 
+==1922== HEAP SUMMARY:
+==1922==     in use at exit: 0 bytes in 0 blocks
+==1922==   total heap usage: 12 allocs, 12 frees, 4,270 bytes allocated
+==1922== 
+==1922== All heap blocks were freed -- no leaks are possible
+==1922== 
+==1922== For lists of detected and suppressed errors, rerun with: -s
+==1922== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
