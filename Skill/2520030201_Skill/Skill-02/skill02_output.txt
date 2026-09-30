@@ -1,0 +1,12 @@
+Skill-02: Interactive Input Loop
+Type a command and press Enter.
+Use Backspace to edit the input.
+Type exit to quit.
+
+Skill-02> hello world
+You entered: hello world
+Skill-02> hellp o
+You entered: hello
+Skill-02> exit
+You entered: exit
+Exiting Skill-02 shell...
