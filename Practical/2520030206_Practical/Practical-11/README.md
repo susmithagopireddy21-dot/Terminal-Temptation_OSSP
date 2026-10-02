@@ -174,6 +174,8 @@ Expected counter value: 400000
 Actual counter value: <actual value>
 Screenshot 1 – Race Condition Program
 
+![Race Condition Program Output](./Screenshot1.png)
+
 6. Understanding the Race Condition
 
 The statement:
@@ -216,6 +218,8 @@ The race-condition program can be executed multiple times:
 The actual result may vary because thread execution order depends on scheduling.
 
 Screenshot 3 – Repeated Race Condition Execution
+
+![Repeated Race Condition Output](./Screenshot3.png)
 
 8. Part B – Mutex Synchronization
 8.1 Description
@@ -353,11 +357,15 @@ Expected counter value: 400000
 Actual counter value: 400000
 Screenshot 2 – Mutex Program Output
 
+![Mutex Program Output](./Screenshot2.png)
+
 13. Final Mutex Execution
 
 The mutex program can also be executed again to verify that the final result remains consistent.
 
 Screenshot 4 – Final Mutex Execution
+
+![Final Mutex Execution](./Screenshot4.png)
 
 14. Comparison Between Both Programs
 Feature	Race Condition Version	Mutex Version
