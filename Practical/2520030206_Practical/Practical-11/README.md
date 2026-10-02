@@ -39,6 +39,7 @@ The objectives of this practical are:
 ```c
 #include <stdio.h>
 #include <pthread.h>
+```
 
 4. Introduction
 
@@ -87,6 +88,7 @@ This situation is called a race condition.
 File: q11.c
 #include <stdio.h>
 #include <pthread.h>
+```
 
 #define NUM_THREADS 4
 #define INCREMENTS 100000
@@ -250,6 +252,7 @@ Therefore, only one thread can modify the counter at a time.
 File: q11_mutex.c
 #include <stdio.h>
 #include <pthread.h>
+```
 
 #define NUM_THREADS 4
 #define INCREMENTS 100000
