@@ -96,6 +96,7 @@ For every buffer size, the program records:
 
 ```bash
 gcc producer_consumer.c -o producer_consumer -pthread                                                                                                       ---                                                                                                                                                         8. Execution
+```
 ./producer_consumer
 9. Producer-Consumer Results
 Buffer Size 3
