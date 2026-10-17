@@ -1,0 +1,25 @@
+
+PRODUCER-CONSUMER RESULTS
+
+Buffer Size: 1
+Items: 100000
+Time: 3.888446 seconds
+Throughput: 25717 items/second
+
+Buffer Size: 5
+Items: 100000
+Time: 1.432896 seconds
+Throughput: 69789 items/second
+
+Buffer Size: 10
+Items: 100000
+Time: 0.447306 seconds
+Throughput: 223560 items/second
+
+Buffer Size: 100
+Items: 100000
+Time: 0.090930 seconds
+Throughput: 1099751 items/second
+
+Observation:
+All 100000 items were produced and consumed for every buffer size.Throughput increased as the buffer size increased in these experiments.

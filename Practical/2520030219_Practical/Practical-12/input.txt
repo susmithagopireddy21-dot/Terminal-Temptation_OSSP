@@ -1,0 +1,9 @@
+Producer-Consumer:
+Buffer sizes: 1, 5, 10, 100
+Items per test: 100000
+
+Deadlock:
+Two threads and two shared resources
+
+Prevention:
+Acquire Resource 1 before Resource 2
