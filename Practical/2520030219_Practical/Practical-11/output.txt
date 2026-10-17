@@ -1,0 +1,7 @@
+Without Mutex:
+Expected counter value: 4000000
+Actual counter value: 1881476
+
+With Mutex:
+Expected counter value: 4000000
+Actual counter value: 4000000
